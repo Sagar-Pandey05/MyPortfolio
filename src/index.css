@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'file';
+  src: url('./assets/file.woff2');
+}
+
+@font-face{
+  font-family: 'file1';
+  src: url('./assets/file(1).woff2');
+}
+
+@font-face{
+  font-family: 'file2';
+  src: url('./assets/file (2).woff2');
+}
+
+@font-face{
+  font-family: 'file3';
+  src: url('./assets/file (3).woff2');
+}
+
+@font-face{
+  font-family: 'file4';
+  src: url('./assets/file (4).woff2');
+}
+
+@font-face{
+  font-family: 'alagfile';
+  src: url('./assets/madefor.woff2');
+}
+
+#Page1-in{
+  position: relative;
+  perspective: 2000px;
+}
+
+#page2{
+  position: relative;
+  perspective: 2000px;
+}
+
+.rotateText{
+  transform-origin: 100% 70%;
+}
+
+#tiltDiv{
+  /* background-color: red; */
+  width: fit-content;
+}
+
+#header-btn{
+  transition: 0.5s;
+}
+
+#page5{
+  position: relative;
+  perspective: 2000px;
+}
+
+.about--text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.line{
+  border: 2px solid white ;
+  transform: rotate(90deg);
+  position: relative;
+  left: 60%;
+  bottom: 40%;
+}
+
+.inp{
+  margin-bottom: 3vh;
+  border-bottom: 1px solid gray;
+  width: 30vw;
+}
+
+@media screen and (max-width: 880px) {
+
+  #Page1-in{
+    height: 100vh;
+    border-radius: 20px;
+    padding-left: 0%;
+  }
+
+  .logo{
+    height: 8vh;
+    margin-top: 1vh;
+  }
+
+  #tiltDiv h1{
+    font-size: 6vh;
+    line-height: 4rem;
+  }
+
+  #page1-bottomText h1{
+    font-size: 2vh;
+    margin-left: -8%;
+  }
+
+  #page1-bottomText h2{
+    font-size: 2vh;
+    margin-left: -8%;
+  }
+
+  #page1-bottomTextImg img{
+    display: none;    
+  }
+
+  #socials {
+    gap: 5vw;
+  }
+  #socials img{
+    height: 8vh;
+  }
+
+  .page3{
+    display: none;
+  }
+
+  .WhatIdo h1{
+    font-size: 27vh;
+    margin-left: -20%;
+  }
+  .bt-page4{
+    margin-top: 50%;
+    margin-left: -20%;
+    width: 64vw;
+  }
+  .circle{
+    display: none;
+  }
+
+  #page5{
+    display: none;
+  }
+
+  .moon{
+    height: 50vh;
+  }
+  .moon h1{
+    font-size: 30vh;
+    left: 10%;
+    top: 7%;
+  }
+
+  .about--text>div{
+    margin-top: 0%;
+  }
+  .about--text div{  
+    margin-bottom: 0px;
+  }
+  .about--text div h1{
+    line-height: 8rem;
+    margin-bottom: -30px;
+  }
+
+  .reachme{
+    height: 50vh;
+  }
+
+  
+  #left{
+    display: none;
+  } 
+  #right{
+    height: fit-content;
+    left:10%;
+    top: 10%;
+    width: 100vw;
+  }
+  #right h1{
+    font-size: 20vh;
+    line-height: 8rem;
+  }
+  #right hr{
+    margin-top: 10%;
+    width: 50%;
+  }
+  #right form input, #right form textarea{
+    width: 70%;
+  }
+}
+
+@media  screen and (max-width: 680px) {
+  #header-btn{
+    display: none;
+  }
+}
