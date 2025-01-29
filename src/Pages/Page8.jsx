@@ -4,7 +4,7 @@ const Page8 = () => {
   return (
     <div className='h-screen p-5 bg-white relative overflow-hidden'>
         <div className='h-full w-full flex  rounded-[50px] overflow-hidden'>
-            <video autoPlay muted loop className='h-full w-full object-cover' src="src/assets/aboutback.mp4"></video>
+            <video autoPlay muted loop className='h-full w-full object-cover' src="https://video.wixstatic.com/video/11062b_cb0c4d13153f4008920bb26beda8de0f/480p/mp4/file.mp4"></video>
             <div className='about--text text-white'>
                 <div className='mb-10 mt-10'>
                     <h1 className='font-[file3] text-[12vw] leading-[19vh] uppercase'>personal</h1>
