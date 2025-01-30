@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face{
   font-family: 'file';
   src: url('./assets/file.woff2');
@@ -80,6 +81,11 @@
   margin-bottom: 3vh;
   border-bottom: 1px solid gray;
   width: 30vw;
+}
+
+#textArea{
+  resize: none;
+  scrollbar-width: none;
 }
 
 @media screen and (max-width: 880px) {

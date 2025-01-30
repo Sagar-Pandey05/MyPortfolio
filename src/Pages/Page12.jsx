@@ -6,19 +6,20 @@ const Page12 = () => {
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
     const [area, setArea] = useState("")
-
-    const SubmitHandler = (e) =>{
-        e.preventDefault()
-        alert("Thank You For Contacting Me")
-
-        setName("")
-        setEmail("")
-        setPhone("")
-        setArea("")
-    }
+    
 
     const onSubmit = async (event) => {
         event.preventDefault();
+        if (name === "" || email === "" || phone === "" || area === "") {
+            alert("Please Fill All The Fields")
+            return
+        }
+        if(!/[@.]/.test(email)){
+            alert("Please Enter A Valid Email")
+            return
+        }
+
+        alert("Thank You For Contacting Me")
         const formData = new FormData(event.target);
     
         formData.append("access_key", "4881851e-d2a1-46c0-a009-708544a35b7f");
@@ -38,6 +39,11 @@ const Page12 = () => {
         if (res.success) {
           console.log("Success", res);
         }
+
+        setName("")
+        setEmail("")
+        setPhone("")
+        setArea("")
     };
 
     return (
@@ -54,7 +60,6 @@ const Page12 = () => {
                     <h1 className='text-white text-[17vh] font-[file3] uppercase -mb-8'>Connect With Me</h1>
                     <hr className='w-[30vw] border-2 mb-10'/>
                     <form onSubmit={(e)=>{
-                        SubmitHandler(e);
                         onSubmit(e);
                     }}>
                         <input type="text" placeholder='Enter Your Name' name='name' className='inp outline-none bg-transparent text-white font-[alagfile]' value={name} onChange={(e)=>{
