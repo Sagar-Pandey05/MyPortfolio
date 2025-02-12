@@ -28,8 +28,8 @@ const Page1Bottom = () => {
         <h2 className='text-gray-500 font-[file2] text-xl ml-5'>SAGAR PANDEY</h2>
       </div>
       <div id='page1-bottomTextImg'>
-        <img ref={RotatorOne} className='h-20 rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpuXP2il9WruNlDDy_AWhoKVhmx51EaKFrw&s" alt="Meta" />
-        <img ref={RotatorTwo} className='mt-5 mb-10 h-20 rounded-full' src="https://www.shutterstock.com/image-illustration/bootcamp-text-written-on-black-600nw-2098974826.jpg" alt="Microsoft" />
+        <a href="https://drive.google.com/file/d/149FMpZZ9wGKKPyzZWl88ovcoWqO4VIRZ/view?usp=sharing" target='_blank'><img ref={RotatorOne} className='h-20 rounded-full' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpuXP2il9WruNlDDy_AWhoKVhmx51EaKFrw&s" alt="Meta" /></a>
+        <a href="https://drive.google.com/file/d/12zI77cj_43b1R2NMBd2Xpklp4ddkBstP/view?usp=sharing" target='_blank'><img ref={RotatorTwo} className='mt-5 mb-10 h-20 rounded-full' src="https://www.shutterstock.com/image-illustration/bootcamp-text-written-on-black-600nw-2098974826.jpg" alt="Microsoft" /></a>        
       </div>
     </div>
   )

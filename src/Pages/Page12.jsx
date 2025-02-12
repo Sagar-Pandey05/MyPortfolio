@@ -19,6 +19,11 @@ const Page12 = () => {
             return
         }
 
+        if(phone.length < 10){
+            alert("Please Enter A Valid Phone Number")
+            return
+        }
+
         alert("Thank You For Contacting Me")
         const formData = new FormData(event.target);
     
