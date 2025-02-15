@@ -15,7 +15,7 @@ const TiltText = (props) => {
 
     return (
         <div id='tiltDiv' ref={props.prop} className='mt-28 ml-10'>
-            <h1 className='text-[4.5vw] uppercase leading-[4vw] text-white font-[file4]'>I am <span id='Dark' className='text-gray-600'>DARK MODE</span></h1>
+            <h1 className='text-[4.5vw] uppercase leading-[4vw] text-white font-[file4]'>Hello<span id='Dark' className='text-gray-600'> I AM </span></h1>
             <h1 className='text-[7vw] leading-[6vw] font-[file4] text-white uppercase'>Software</h1>
             <h1 className='text-[4.5vw] uppercase leading-[4vw] text-white font-[file4]'>Developer</h1>
         </div>
